@@ -572,8 +572,7 @@ open class DKAssetGroupDetailVC: UIViewController,
         
         cell.longPressBlock = { [weak self, weak cell] in
             guard let strongSelf = self, let strongCell = cell else { return }
-            
-            strongSelf.showGallery(from: strongCell)
+            return
         }
     }
 
