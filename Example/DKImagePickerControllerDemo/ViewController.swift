@@ -55,7 +55,7 @@ class ViewController: UIViewController,
             self.updateAssets(assets: assets)
 		}
 		
-		if UI_USER_INTERFACE_IDIOM() == .pad {
+		if UIDevice.current.userInterfaceIdiom == .pad {
 			pickerController.modalPresentationStyle = .formSheet
 		}
         
